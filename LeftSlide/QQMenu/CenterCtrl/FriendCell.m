@@ -9,7 +9,7 @@
 #import "FriendCell.h"
 
 @implementation FriendCell {
-    
+    UIImageView *headerImgV;
     UILabel *NameLabel;
     UILabel *stateLabel;
     UILabel *infoLabel;
@@ -29,8 +29,7 @@
 
 - (void)creatUI {
     
-    UIImageView *headerImgV = [[UIImageView alloc]initWithFrame:CGRectMake(10, 5, 50, 50)];
-    headerImgV.image = [UIImage imageNamed:[NSString stringWithFormat:@"%u",arc4random_uniform(6)]];
+    headerImgV = [[UIImageView alloc]initWithFrame:CGRectMake(10, 5, 50, 50)];
     headerImgV.layer.cornerRadius = headerImgV.frame.size.width/2;
     headerImgV.layer.masksToBounds = YES;
     [self addSubview:headerImgV];
@@ -54,6 +53,8 @@
 
 
 -(void)setModel:(GroupModel *)model IndexPath:(NSIndexPath *)indexPath {
+
+    headerImgV.image = [UIImage imageNamed:[NSString stringWithFormat:@"%ld",indexPath.row%6]];
 
     NSDictionary *friendInfoDic = model.groupFriends[indexPath.row];
     NameLabel.text = friendInfoDic[@"name"];
