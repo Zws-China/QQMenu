@@ -1,0 +1,21 @@
+//
+//  zws.pch
+//  LeftMenu
+//
+//  Created by iMac on 17/4/24.
+//  Copyright © 2017年 zws. All rights reserved.
+//
+
+#ifndef zws_pch
+#define zws_pch
+
+
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define kTabbarHeight 49
+#define kNavHeight 64
+
+
+
+
+#endif /* zws_pch */

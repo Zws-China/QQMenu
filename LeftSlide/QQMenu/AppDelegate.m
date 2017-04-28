@@ -1,15 +1,23 @@
 //
 //  AppDelegate.m
-//  LeftSlide
+//  QQMenu
 //
 //  Created by iMac on 17/3/8.
 //  Copyright © 2017年 zws. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "LeftViewController.h"
+#import "MMDrawerController.h"
+#import "LeftController.h"
+#import "CenterController.h"
+#import "MMDrawerVisualState.h"
+
+#import "MMExampleDrawerVisualStateManager.h"
+
 
 @interface AppDelegate ()
+
+@property (nonatomic,strong) MMDrawerController * drawerController;
 
 @end
 
@@ -17,18 +25,35 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.backgroundColor = [UIColor whiteColor];   //设置通用背景颜色
-    [self.window makeKeyAndVisible];
     
     
-    self.mainTabBarController = [[BaseTabBarController alloc] init];
-
-    LeftViewController *leftVC = [[LeftViewController alloc] init];
-    self.LeftSlideVC = [[LeftSlideViewController alloc] initWithLeftView:leftVC andMainView:self.mainTabBarController];
-
-    self.window.rootViewController = self.LeftSlideVC;
-
+    LeftController *leftVC = [[LeftController alloc] init];
+    
+    UINavigationController *centerNav = [[UINavigationController alloc] initWithRootViewController:[[CenterController alloc] init]];
+    centerNav.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
+    centerNav.navigationBar.tintColor = [UIColor whiteColor];
+    centerNav.navigationBar.barTintColor = [UIColor colorWithRed:44/255.0 green:185/255.0 blue:176/255.0 alpha:1];
+    
+    
+    self.drawerController = [[MMDrawerController alloc]initWithCenterViewController:centerNav leftDrawerViewController:leftVC];
+    [self.drawerController setShowsShadow:YES];
+    [self.drawerController setMaximumLeftDrawerWidth:kScreenWidth-100];
+    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+    [self.drawerController setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+        
+        MMDrawerControllerDrawerVisualStateBlock block;
+        block = [[MMExampleDrawerVisualStateManager sharedManager]
+                 drawerVisualStateBlockForDrawerSide:drawerSide];
+        if(block){
+            block(drawerController, drawerSide, percentVisible);
+        }
+        
+    }];//侧滑效果
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window setRootViewController:self.drawerController];
     
     
     return YES;

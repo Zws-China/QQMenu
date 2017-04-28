@@ -9,20 +9,48 @@
 /* Begin PBXBuildFile section */
 		881893771EB3380E003E3F43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8818936C1EB3380E003E3F43 /* AppDelegate.m */; };
 		881893781EB3380E003E3F43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8818936D1EB3380E003E3F43 /* Assets.xcassets */; };
-		881893791EB3380E003E3F43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8818936F1EB3380E003E3F43 /* LaunchScreen.storyboard */; };
-		8818937A1EB3380E003E3F43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881893711EB3380E003E3F43 /* Main.storyboard */; };
 		8818937B1EB3380E003E3F43 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 881893731EB3380E003E3F43 /* Info.plist */; };
 		8818937C1EB3380E003E3F43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 881893751EB3380E003E3F43 /* main.m */; };
+		881893891EB338C5003E3F43 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8818937F1EB338C5003E3F43 /* MMDrawerBarButtonItem.m */; };
+		8818938A1EB338C5003E3F43 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881893821EB338C5003E3F43 /* MMDrawerController.m */; };
+		8818938B1EB338C5003E3F43 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 881893841EB338C5003E3F43 /* MMDrawerVisualState.m */; };
+		8818938C1EB338C5003E3F43 /* MMExampleDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 881893861EB338C5003E3F43 /* MMExampleDrawerVisualStateManager.m */; };
+		8818938D1EB338C5003E3F43 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881893881EB338C5003E3F43 /* UIViewController+MMDrawerController.m */; };
+		881893901EB338D6003E3F43 /* LeftController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8818938F1EB338D6003E3F43 /* LeftController.m */; };
+		881893981EB338F6003E3F43 /* CenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881893931EB338F6003E3F43 /* CenterController.m */; };
+		881893991EB338F6003E3F43 /* FriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 881893951EB338F6003E3F43 /* FriendCell.m */; };
+		8818939A1EB338F6003E3F43 /* GroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 881893971EB338F6003E3F43 /* GroupModel.m */; };
+		8818939E1EB33902003E3F43 /* PushController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8818939C1EB33902003E3F43 /* PushController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8818936B1EB3380E003E3F43 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8818936C1EB3380E003E3F43 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8818936D1EB3380E003E3F43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		881893701EB3380E003E3F43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		881893721EB3380E003E3F43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		881893731EB3380E003E3F43 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		881893751EB3380E003E3F43 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8818937E1EB338C5003E3F43 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		8818937F1EB338C5003E3F43 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		881893801EB338C5003E3F43 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		881893811EB338C5003E3F43 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		881893821EB338C5003E3F43 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		881893831EB338C5003E3F43 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		881893841EB338C5003E3F43 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		881893851EB338C5003E3F43 /* MMExampleDrawerVisualStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExampleDrawerVisualStateManager.h; sourceTree = "<group>"; };
+		881893861EB338C5003E3F43 /* MMExampleDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExampleDrawerVisualStateManager.m; sourceTree = "<group>"; };
+		881893871EB338C5003E3F43 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		881893881EB338C5003E3F43 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		8818938E1EB338D6003E3F43 /* LeftController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftController.h; sourceTree = "<group>"; };
+		8818938F1EB338D6003E3F43 /* LeftController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftController.m; sourceTree = "<group>"; };
+		881893921EB338F6003E3F43 /* CenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterController.h; sourceTree = "<group>"; };
+		881893931EB338F6003E3F43 /* CenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterController.m; sourceTree = "<group>"; };
+		881893941EB338F6003E3F43 /* FriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendCell.h; sourceTree = "<group>"; };
+		881893951EB338F6003E3F43 /* FriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendCell.m; sourceTree = "<group>"; };
+		881893961EB338F6003E3F43 /* GroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupModel.h; sourceTree = "<group>"; };
+		881893971EB338F6003E3F43 /* GroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupModel.m; sourceTree = "<group>"; };
+		8818939B1EB33902003E3F43 /* PushController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushController.h; sourceTree = "<group>"; };
+		8818939C1EB33902003E3F43 /* PushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushController.m; sourceTree = "<group>"; };
+		8818939D1EB33902003E3F43 /* zws.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zws.pch; sourceTree = "<group>"; };
 		889A1A531E6F9D1A0069FE55 /* QQMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QQMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -40,25 +68,22 @@
 		8818936A1EB3380E003E3F43 /* QQMenu */ = {
 			isa = PBXGroup;
 			children = (
+				8818937D1EB338C5003E3F43 /* MMDrawerController */,
 				8818936B1EB3380E003E3F43 /* AppDelegate.h */,
 				8818936C1EB3380E003E3F43 /* AppDelegate.m */,
+				8818938E1EB338D6003E3F43 /* LeftController.h */,
+				8818938F1EB338D6003E3F43 /* LeftController.m */,
+				881893911EB338EA003E3F43 /* CenterCtrl */,
+				8818939B1EB33902003E3F43 /* PushController.h */,
+				8818939C1EB33902003E3F43 /* PushController.m */,
+				8818939D1EB33902003E3F43 /* zws.pch */,
 				8818936D1EB3380E003E3F43 /* Assets.xcassets */,
-				8818936E1EB3380E003E3F43 /* Base */,
-				8818936F1EB3380E003E3F43 /* LaunchScreen.storyboard */,
-				881893711EB3380E003E3F43 /* Main.storyboard */,
 				881893731EB3380E003E3F43 /* Info.plist */,
 				881893741EB3380E003E3F43 /* LeftSlideViewController */,
 				881893751EB3380E003E3F43 /* main.m */,
 				881893761EB3380E003E3F43 /* 图片 */,
 			);
 			path = QQMenu;
-			sourceTree = "<group>";
-		};
-		8818936E1EB3380E003E3F43 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		881893741EB3380E003E3F43 /* LeftSlideViewController */ = {
@@ -73,6 +98,37 @@
 			children = (
 			);
 			path = "图片";
+			sourceTree = "<group>";
+		};
+		8818937D1EB338C5003E3F43 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				8818937E1EB338C5003E3F43 /* MMDrawerBarButtonItem.h */,
+				8818937F1EB338C5003E3F43 /* MMDrawerBarButtonItem.m */,
+				881893801EB338C5003E3F43 /* MMDrawerController+Subclass.h */,
+				881893811EB338C5003E3F43 /* MMDrawerController.h */,
+				881893821EB338C5003E3F43 /* MMDrawerController.m */,
+				881893831EB338C5003E3F43 /* MMDrawerVisualState.h */,
+				881893841EB338C5003E3F43 /* MMDrawerVisualState.m */,
+				881893851EB338C5003E3F43 /* MMExampleDrawerVisualStateManager.h */,
+				881893861EB338C5003E3F43 /* MMExampleDrawerVisualStateManager.m */,
+				881893871EB338C5003E3F43 /* UIViewController+MMDrawerController.h */,
+				881893881EB338C5003E3F43 /* UIViewController+MMDrawerController.m */,
+			);
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		881893911EB338EA003E3F43 /* CenterCtrl */ = {
+			isa = PBXGroup;
+			children = (
+				881893921EB338F6003E3F43 /* CenterController.h */,
+				881893931EB338F6003E3F43 /* CenterController.m */,
+				881893941EB338F6003E3F43 /* FriendCell.h */,
+				881893951EB338F6003E3F43 /* FriendCell.m */,
+				881893961EB338F6003E3F43 /* GroupModel.h */,
+				881893971EB338F6003E3F43 /* GroupModel.m */,
+			);
+			path = CenterCtrl;
 			sourceTree = "<group>";
 		};
 		889A1A4A1E6F9D1A0069FE55 = {
@@ -149,9 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8818937B1EB3380E003E3F43 /* Info.plist in Resources */,
-				8818937A1EB3380E003E3F43 /* Main.storyboard in Resources */,
 				881893781EB3380E003E3F43 /* Assets.xcassets in Resources */,
-				881893791EB3380E003E3F43 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,31 +216,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8818938B1EB338C5003E3F43 /* MMDrawerVisualState.m in Sources */,
+				8818938C1EB338C5003E3F43 /* MMExampleDrawerVisualStateManager.m in Sources */,
+				881893901EB338D6003E3F43 /* LeftController.m in Sources */,
+				8818938D1EB338C5003E3F43 /* UIViewController+MMDrawerController.m in Sources */,
+				8818939A1EB338F6003E3F43 /* GroupModel.m in Sources */,
 				8818937C1EB3380E003E3F43 /* main.m in Sources */,
+				881893981EB338F6003E3F43 /* CenterController.m in Sources */,
+				8818939E1EB33902003E3F43 /* PushController.m in Sources */,
+				881893891EB338C5003E3F43 /* MMDrawerBarButtonItem.m in Sources */,
+				881893991EB338F6003E3F43 /* FriendCell.m in Sources */,
+				8818938A1EB338C5003E3F43 /* MMDrawerController.m in Sources */,
 				881893771EB3380E003E3F43 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		8818936F1EB3380E003E3F43 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				881893701EB3380E003E3F43 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		881893711EB3380E003E3F43 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				881893721EB3380E003E3F43 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		889A1A681E6F9D1A0069FE55 /* Debug */ = {
@@ -275,7 +320,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = LeftSlide/Info.plist;
+				GCC_PREFIX_HEADER = ./QQMenu/zws.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/QQMenu/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sinfotek.LeftSlide;
@@ -287,7 +333,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = LeftSlide/Info.plist;
+				GCC_PREFIX_HEADER = ./QQMenu/zws.pch;
+				INFOPLIST_FILE = "$(SRCROOT)/QQMenu/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sinfotek.LeftSlide;
