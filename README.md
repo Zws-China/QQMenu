@@ -17,7 +17,7 @@ QQ侧滑菜单,右滑菜单,QQ展开菜单,QQ好友分组
 # How To Use	
 ```ruby
 //右滑菜单
-//侧滑菜单使用的是MMDrawerController框架
+//侧滑菜单使用的是MMDrawerController框架,在此感谢MMDrawerController作者。
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 
