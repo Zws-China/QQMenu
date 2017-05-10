@@ -9,10 +9,19 @@
 /* Begin PBXBuildFile section */
 		881775E61EC313E300AD6C71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 881775E51EC313E300AD6C71 /* main.m */; };
 		881775E91EC313E300AD6C71 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 881775E81EC313E300AD6C71 /* AppDelegate.m */; };
-		881775EC1EC313E300AD6C71 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881775EB1EC313E300AD6C71 /* ViewController.m */; };
 		881775EF1EC313E300AD6C71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881775ED1EC313E300AD6C71 /* Main.storyboard */; };
 		881775F11EC313E300AD6C71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881775F01EC313E300AD6C71 /* Assets.xcassets */; };
 		881775F41EC313E300AD6C71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881775F21EC313E300AD6C71 /* LaunchScreen.storyboard */; };
+		881776071EC3146600AD6C71 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 881775FD1EC3146600AD6C71 /* MMDrawerBarButtonItem.m */; };
+		881776081EC3146600AD6C71 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881776001EC3146600AD6C71 /* MMDrawerController.m */; };
+		881776091EC3146600AD6C71 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 881776021EC3146600AD6C71 /* MMDrawerVisualState.m */; };
+		8817760A1EC3146600AD6C71 /* MMExampleDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 881776041EC3146600AD6C71 /* MMExampleDrawerVisualStateManager.m */; };
+		8817760B1EC3146600AD6C71 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881776061EC3146600AD6C71 /* UIViewController+MMDrawerController.m */; };
+		881776101EC3147000AD6C71 /* LeftController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8817760D1EC3147000AD6C71 /* LeftController.m */; };
+		881776111EC3147000AD6C71 /* PushController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8817760F1EC3147000AD6C71 /* PushController.m */; };
+		8817761A1EC3150600AD6C71 /* CenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881776151EC3150600AD6C71 /* CenterController.m */; };
+		8817761B1EC3150600AD6C71 /* FriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 881776171EC3150600AD6C71 /* FriendCell.m */; };
+		8817761C1EC3150600AD6C71 /* GroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 881776191EC3150600AD6C71 /* GroupModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +29,32 @@
 		881775E51EC313E300AD6C71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		881775E71EC313E300AD6C71 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		881775E81EC313E300AD6C71 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		881775EA1EC313E300AD6C71 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		881775EB1EC313E300AD6C71 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		881775EE1EC313E300AD6C71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		881775F01EC313E300AD6C71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		881775F31EC313E300AD6C71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		881775F51EC313E300AD6C71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		881775FC1EC3146600AD6C71 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		881775FD1EC3146600AD6C71 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		881775FE1EC3146600AD6C71 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		881775FF1EC3146600AD6C71 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		881776001EC3146600AD6C71 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		881776011EC3146600AD6C71 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		881776021EC3146600AD6C71 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		881776031EC3146600AD6C71 /* MMExampleDrawerVisualStateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMExampleDrawerVisualStateManager.h; sourceTree = "<group>"; };
+		881776041EC3146600AD6C71 /* MMExampleDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExampleDrawerVisualStateManager.m; sourceTree = "<group>"; };
+		881776051EC3146600AD6C71 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		881776061EC3146600AD6C71 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		8817760C1EC3147000AD6C71 /* LeftController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftController.h; sourceTree = "<group>"; };
+		8817760D1EC3147000AD6C71 /* LeftController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftController.m; sourceTree = "<group>"; };
+		8817760E1EC3147000AD6C71 /* PushController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushController.h; sourceTree = "<group>"; };
+		8817760F1EC3147000AD6C71 /* PushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushController.m; sourceTree = "<group>"; };
+		881776121EC3147B00AD6C71 /* zws.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zws.pch; sourceTree = "<group>"; };
+		881776141EC3150600AD6C71 /* CenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CenterController.h; sourceTree = "<group>"; };
+		881776151EC3150600AD6C71 /* CenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CenterController.m; sourceTree = "<group>"; };
+		881776161EC3150600AD6C71 /* FriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendCell.h; sourceTree = "<group>"; };
+		881776171EC3150600AD6C71 /* FriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendCell.m; sourceTree = "<group>"; };
+		881776181EC3150600AD6C71 /* GroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupModel.h; sourceTree = "<group>"; };
+		881776191EC3150600AD6C71 /* GroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +87,19 @@
 		881775E31EC313E300AD6C71 /* QQMenu */ = {
 			isa = PBXGroup;
 			children = (
+				881775FB1EC3146600AD6C71 /* MMDrawerController */,
 				881775E71EC313E300AD6C71 /* AppDelegate.h */,
 				881775E81EC313E300AD6C71 /* AppDelegate.m */,
-				881775EA1EC313E300AD6C71 /* ViewController.h */,
-				881775EB1EC313E300AD6C71 /* ViewController.m */,
+				881776131EC3150600AD6C71 /* CenterCtrl */,
+				8817760C1EC3147000AD6C71 /* LeftController.h */,
+				8817760D1EC3147000AD6C71 /* LeftController.m */,
+				8817760E1EC3147000AD6C71 /* PushController.h */,
+				8817760F1EC3147000AD6C71 /* PushController.m */,
 				881775ED1EC313E300AD6C71 /* Main.storyboard */,
 				881775F01EC313E300AD6C71 /* Assets.xcassets */,
 				881775F21EC313E300AD6C71 /* LaunchScreen.storyboard */,
 				881775F51EC313E300AD6C71 /* Info.plist */,
+				881776121EC3147B00AD6C71 /* zws.pch */,
 				881775E41EC313E300AD6C71 /* Supporting Files */,
 			);
 			path = QQMenu;
@@ -77,6 +111,37 @@
 				881775E51EC313E300AD6C71 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		881775FB1EC3146600AD6C71 /* MMDrawerController */ = {
+			isa = PBXGroup;
+			children = (
+				881775FC1EC3146600AD6C71 /* MMDrawerBarButtonItem.h */,
+				881775FD1EC3146600AD6C71 /* MMDrawerBarButtonItem.m */,
+				881775FE1EC3146600AD6C71 /* MMDrawerController+Subclass.h */,
+				881775FF1EC3146600AD6C71 /* MMDrawerController.h */,
+				881776001EC3146600AD6C71 /* MMDrawerController.m */,
+				881776011EC3146600AD6C71 /* MMDrawerVisualState.h */,
+				881776021EC3146600AD6C71 /* MMDrawerVisualState.m */,
+				881776031EC3146600AD6C71 /* MMExampleDrawerVisualStateManager.h */,
+				881776041EC3146600AD6C71 /* MMExampleDrawerVisualStateManager.m */,
+				881776051EC3146600AD6C71 /* UIViewController+MMDrawerController.h */,
+				881776061EC3146600AD6C71 /* UIViewController+MMDrawerController.m */,
+			);
+			path = MMDrawerController;
+			sourceTree = "<group>";
+		};
+		881776131EC3150600AD6C71 /* CenterCtrl */ = {
+			isa = PBXGroup;
+			children = (
+				881776141EC3150600AD6C71 /* CenterController.h */,
+				881776151EC3150600AD6C71 /* CenterController.m */,
+				881776161EC3150600AD6C71 /* FriendCell.h */,
+				881776171EC3150600AD6C71 /* FriendCell.m */,
+				881776181EC3150600AD6C71 /* GroupModel.h */,
+				881776191EC3150600AD6C71 /* GroupModel.m */,
+			);
+			path = CenterCtrl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +214,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				881775EC1EC313E300AD6C71 /* ViewController.m in Sources */,
+				8817760A1EC3146600AD6C71 /* MMExampleDrawerVisualStateManager.m in Sources */,
+				881776101EC3147000AD6C71 /* LeftController.m in Sources */,
+				881776091EC3146600AD6C71 /* MMDrawerVisualState.m in Sources */,
+				8817761B1EC3150600AD6C71 /* FriendCell.m in Sources */,
+				8817760B1EC3146600AD6C71 /* UIViewController+MMDrawerController.m in Sources */,
+				881776111EC3147000AD6C71 /* PushController.m in Sources */,
+				8817761C1EC3150600AD6C71 /* GroupModel.m in Sources */,
+				881776081EC3146600AD6C71 /* MMDrawerController.m in Sources */,
+				881776071EC3146600AD6C71 /* MMDrawerBarButtonItem.m in Sources */,
 				881775E91EC313E300AD6C71 /* AppDelegate.m in Sources */,
+				8817761A1EC3150600AD6C71 /* CenterController.m in Sources */,
 				881775E61EC313E300AD6C71 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +337,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = ./QQMenu/zws.pch;
 				INFOPLIST_FILE = QQMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sinfotek.QQMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,7 +350,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = ./QQMenu/zws.pch;
 				INFOPLIST_FILE = QQMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sinfotek.QQMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
